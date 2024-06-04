@@ -1,21 +1,22 @@
 <html>
 <body>
 
-<h2>Image Maps</h2>
-
-<p>Click on the cup of coffee to execute a JavaScript function:</p>
-
-<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
-
-<map name="workmap">
-  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
-</map>
-
+<div class="zoom">  
+    <h1>Zoom meeeee</h1>
+</div>
 <script>
-function myFunction() {
-  alert("You clicked the coffee cup!");
-}
-</script>
+    const zoomElement = document.querySelector(".zoom");
+let zoom = 1;
+const ZOOM_SPEED = 0.1;
 
+document.addEventListener("wheel", function(e) {  
+    
+    if(e.deltaY > 0){    
+        zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
+    }else{    
+        zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
+
+});
+</script>
 </body>
 </html>
