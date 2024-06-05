@@ -29,27 +29,30 @@ h1 {
     position: absolute;
 }
 .resumeOverlay {
-    pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
-    opacity: 0.8; /* Adjust the opacity as needed */
+    /*pointer-events: none;  /*Ensures overlay image doesn't interfere with scroll events */
+    opacity: 1; /* Adjust the opacity as needed */
     width: 10%; /* Adjust the size as needed */
     left: 38%; /* Position a bit to the left */
     top: 35%;
+    z-index: 1;
 }
 
 .pictureOverlay {
-    pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
-    opacity: 0.8; /* Adjust the opacity as needed */
+    /*pointer-events: none;  /*Ensures overlay image doesn't interfere with scroll events */
+    opacity: 1; /* Adjust the opacity as needed */
     width: 10%; /* Adjust the size as needed */
     left: 38%; /* Position a bit to the left */
     top: 20%;
+    z-index: 2;
 }
 
 .computerOverlay {
-    pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
-    opacity: 0.8; /* Adjust the opacity as needed */
+    /*pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
+    opacity: 1; /* Adjust the opacity as needed */
     width: 15%; /* Adjust the size as needed */
     left: 49%; /* Position a bit to the left */
     top: 15%;
+    z-index: 3;
 }
 /* Additional zoom effect on hover */
 /*.zoom overlay:hover {

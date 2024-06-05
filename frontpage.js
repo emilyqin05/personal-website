@@ -19,3 +19,13 @@ document.addEventListener("wheel", function(e) {
 
     zoomElement.style.transform = `scale(${zoom})`;
 });
+
+// Click event for resumeOverlay
+const resumeOverlay = document.querySelector(".resumeOverlay");
+
+resumeOverlay.addEventListener("click", function(event) {
+    event.stopPropagation(); // Stop the click event from propagating
+
+    // Replace "path_to_your_resume_pdf.pdf" with the actual path to your PDF file
+    window.location.href = "Resume.pdf";
+});
