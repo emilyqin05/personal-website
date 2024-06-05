@@ -58,3 +58,30 @@ h1 {
 /*.zoom overlay:hover {
     transform: scale(1.1);
 }*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 9999; /* Ensure pop-up is above other content */
+}
+.popup img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.popup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}

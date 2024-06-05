@@ -19,3 +19,15 @@ document.addEventListener("wheel", function(e) {
 
     zoomElement.style.transform = `scale(${zoom})`;
 });
+
+const pictureOverlay = document.querySelector(".pictureOverlay");
+const aboutMePopup = document.getElementById("aboutMePopup");
+const closePopupButton = document.getElementById("closePopup");
+
+pictureOverlay.addEventListener("click", function() {
+    aboutMePopup.style.display = "block";
+});
+
+closePopupButton.addEventListener("click", function() {
+    aboutMePopup.style.display = "none";
+});
