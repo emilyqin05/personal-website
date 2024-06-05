@@ -9,10 +9,12 @@ zoomElement.style.transform = `scale(${zoom})`;
 zoomElement.style.transformOrigin = "center 20%";
 
 
+
 document.addEventListener("wheel", function(e) {  
     if(e.deltaY > 0 && zoom < MAX_ZOOM){    
         zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
     } else if(e.deltaY < 0 && zoom > MIN_ZOOM){    
         zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  
     }
+
 });
