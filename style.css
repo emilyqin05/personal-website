@@ -35,6 +35,14 @@ h1 {
     left: 38%; /* Position a bit to the left */
     top: 35%;
 }
+
+.overlay2 {
+    pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
+    opacity: 0.8; /* Adjust the opacity as needed */
+    width: 10%; /* Adjust the size as needed */
+    left: 38%; /* Position a bit to the left */
+    top: 20%;
+}
 /* Additional zoom effect on hover */
 /*.zoom overlay:hover {
     transform: scale(1.1);
