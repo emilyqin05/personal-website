@@ -1,0 +1,31 @@
+/* Style for the h1 element */
+h1 {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the .zoom class to center its content */
+.zoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    margin: 20px;
+    padding-top:10vh;
+    transform-origin: center 20%
+}
+
+
+/* Style for the img tag within the .zoom class */
+.zoom img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+/* Additional zoom effect on hover */
+/*.zoom img:hover {
+    transform: scale(1.1);
+}*/
