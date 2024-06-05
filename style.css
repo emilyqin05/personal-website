@@ -26,8 +26,12 @@ h1 {
     max-width: 100%;
     height: auto;
     transition: transform 0.2s;
+    position: absolute;
 }
-
+.overlay {
+    pointer-events: none; /* Ensures overlay image doesn't interfere with scroll events */
+    opacity: 0.8; /* Adjust the opacity as needed */
+}
 /* Additional zoom effect on hover */
 /*.zoom img:hover {
     transform: scale(1.1);

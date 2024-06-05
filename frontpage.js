@@ -17,4 +17,5 @@ document.addEventListener("wheel", function(e) {
         zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  
     }
 
+    zoomElement.style.transform = `scale(${zoom})`;
 });
