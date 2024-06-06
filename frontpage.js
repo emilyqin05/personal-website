@@ -32,15 +32,3 @@ closePopupButton.addEventListener("click", function() {
     aboutMePopup.style.display = "none";
 });
 
-
-const computerOverlay = document.querySelector(".computerOverlay");
-const computerPopup = document.getElementById("computerPopup");
-const closeComputerPopupButton = document.getElementById("closeComputerPopup");
-
-computerOverlay.addEventListener("click", function() {
-    computerPopup.style.display = "block";
-});
-
-closeComputerPopupButton.addEventListener("click", function() {
-    computerPopup.style.display = "none";
-});

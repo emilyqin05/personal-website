@@ -86,15 +86,3 @@ h1 {
     font-size: 20px;
 }
 
-#computerPopup .scrollableContent {
-    max-height: 400px; /* Adjust height as needed */
-    overflow-y: scroll;
-    width: 300px; /* Adjust width as needed */
-}
-
-.box {
-    background-color: #f0f0f0;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
