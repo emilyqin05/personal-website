@@ -31,3 +31,9 @@ pictureOverlay.addEventListener("click", function() {
 closePopupButton.addEventListener("click", function() {
     aboutMePopup.style.display = "none";
 });
+
+const computerOverlay = document.querySelector(".computerOverlay");
+
+computerOverlay.addEventListener("click", function() {
+    window.open("projects.html", "_blank");
+});
