@@ -65,6 +65,7 @@ h1 {
     left: 49%; /* Ensure this matches the position of the Screen.svg */
     top: 15%; /* Ensure this matches the position of the Screen.svg */
     z-index: 4;
+    pointer-events: none;
 }
 
 .screenOverlay {
@@ -78,7 +79,7 @@ h1 {
     left: 4%; /* Adjust based on where you want the text to start */
     width: 70%; /* Adjust based on the screen size */
     height: 90%; /* Adjust based on the screen size */
-    overflow-y: scroll;
+    overflow-y: hidden;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     z-index: 5;

@@ -35,8 +35,19 @@ closePopupButton.addEventListener("click", function() {
 
 const computerOverlay = document.querySelector(".computerOverlay");
 const screenContainer = document.querySelector(".screenContainer");
+const miniScreen = document.querySelector(".miniScreen");
 
-computerOverlay.addEventListener("click", function() {
+/*computerOverlay.addEventListener("click", function() {
     zoomElement.style.transform = `scale(2)`;
     screenContainer.style.display = "block";
+});*/
+
+computerOverlay.addEventListener("click", function() {
+    // Zoom into the computerOverlay
+    zoomElement.style.transform = `scale(2)`;
+    zoomElement.style.transformOrigin = "49% 15%"; // Adjust to zoom into the computer
+
+    // Make miniScreen interactive and scrollable
+    screenContainer.style.pointerEvents = "auto";
+    miniScreen.style.overflowY = "scroll";
 });
