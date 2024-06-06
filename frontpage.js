@@ -32,3 +32,11 @@ closePopupButton.addEventListener("click", function() {
     aboutMePopup.style.display = "none";
 });
 
+
+const computerOverlay = document.querySelector(".computerOverlay");
+const screenContainer = document.querySelector(".screenContainer");
+
+computerOverlay.addEventListener("click", function() {
+    zoomElement.style.transform = `scale(2)`;
+    screenContainer.style.display = "block";
+});
