@@ -44,8 +44,8 @@ const miniScreen = document.querySelector(".miniScreen");
 
 computerOverlay.addEventListener("click", function() {
     // Zoom into the computerOverlay
-    zoomElement.style.transform = `scale(2)`;
-    zoomElement.style.transformOrigin = "49% 15%"; // Adjust to zoom into the computer
+    zoomElement.style.transform = `scale(4.5)`;
+    zoomElement.style.transformOrigin = "59% 19%"; // Adjust to zoom into the computer
 
     // Make miniScreen interactive and scrollable
     screenContainer.style.pointerEvents = "auto";
